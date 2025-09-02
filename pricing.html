@@ -3,98 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>料金案内 | 山田太郎税理士事務所</title>
+    <title>料金 | 新星税理士事務所</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+
+    <header class="site-header">
         <div class="container">
-            <h1><a href="index.html">山田太郎税理士事務所</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="about.html">事務所概要</a></li>
-                    <li><a href="services.html">業務内容</a></li>
-                    <li><a href="pricing.html" class="active">料金案内</a></li>
-                    <li><a href="faq.html">よくあるご質問</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                    <li><a href="greeting.html">代表挨拶</a></li>
-                </ul>
-            </nav>
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">新星税理士事務所</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="services.html">サービス</a></li>
+                        <li><a href="about.html">事務所紹介</a></li>
+                        <li><a href="greeting.html">代表挨拶</a></li>
+                        <li><a href="pricing.html" class="active">料金</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:03-1234-5678" class="phone-number">03-1234-5678</a>
+                    <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="page-header container">
-            <h2>料金案内</h2>
-        </section>
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">料金プラン</h2>
+                <p class="text-center">お客様の事業規模やご依頼内容に応じて、最適なプランをご提案いたします。下記は標準的な料金の目安です。</p>
 
-        <section id="pricing-content" class="container">
-            <p>当事務所の料金は、お客様の事業規模やご依頼内容に応じて柔軟に設定しております。下記は標準的な料金の目安です。詳細はお見積りいたしますので、お気軽にお問い合わせください。</p>
+                <h3 class="pricing-subtitle">法人のお客様</h3>
+                <table class="pricing-table-detailed">
+                    <thead>
+                        <tr>
+                            <th>年間売上高</th>
+                            <th>月額顧問料（税抜）</th>
+                            <th>決算申告料（税抜）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>～1,000万円</td>
+                            <td>25,000円～</td>
+                            <td>月額顧問料の4ヶ月分～</td>
+                        </tr>
+                        <tr>
+                            <td>～3,000万円</td>
+                            <td>35,000円～</td>
+                            <td>月額顧問料の4ヶ月分～</td>
+                        </tr>
+                        <tr>
+                            <td>～5,000万円</td>
+                            <td>45,000円～</td>
+                            <td>月額顧問料の5ヶ月分～</td>
+                        </tr>
+                        <tr>
+                            <td>～1億円</td>
+                            <td>55,000円～</td>
+                            <td>月額顧問料の5ヶ月分～</td>
+                        </tr>
+                        <tr>
+                            <td>1億円～</td>
+                            <td colspan="2">別途お見積り</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <h3>顧問料（法人のお客様）</h3>
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>年間売上高</th>
-                        <th>月額顧問料（税抜）</th>
-                        <th>決算申告料（税抜）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>～1,000万円</td>
-                        <td>25,000円～</td>
-                        <td>月額顧問料の4ヶ月分～</td>
-                    </tr>
-                    <tr>
-                        <td>1,000万円～3,000万円</td>
-                        <td>35,000円～</td>
-                        <td>月額顧問料の4ヶ月分～</td>
-                    </tr>
-                    <tr>
-                        <td>3,000万円～5,000万円</td>
-                        <td>45,000円～</td>
-                        <td>月額顧問料の5ヶ月分～</td>
-                    </tr>
-                     <tr>
-                        <td>5,000万円～1億円</td>
-                        <td>55,000円～</td>
-                        <td>月額顧問料の5ヶ月分～</td>
-                    </tr>
-                </tbody>
-            </table>
-            <small>※上記料金には、記帳代行、年末調整、償却資産税申告の費用は含まれておりません。</small>
-
-            <h3>オプション料金</h3>
-             <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>サービス内容</th>
-                        <th>料金（税抜）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>記帳代行</td>
-                        <td>10,000円/月～</td>
-                    </tr>
-                    <tr>
-                        <td>年末調整</td>
-                        <td>20,000円～</td>
-                    </tr>
-                    <tr>
-                        <td>税務調査立会</td>
-                        <td>50,000円/日</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h3 class="pricing-subtitle">個人事業主のお客様</h3>
+                <table class="pricing-table-detailed">
+                     <thead>
+                        <tr>
+                            <th>年間売上高</th>
+                            <th>月額顧問料（税抜）</th>
+                            <th>確定申告料（税抜）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>～1,000万円</td>
+                            <td>20,000円～</td>
+                            <td>100,000円～</td>
+                        </tr>
+                        <tr>
+                            <td>～3,000万円</td>
+                            <td>30,000円～</td>
+                            <td>150,000円～</td>
+                        </tr>
+                        <tr>
+                            <td>3,000万円～</td>
+                            <td colspan="2">別途お見積り</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small class="text-center" style="display: block; margin-top: 20px;">※上記は標準的な料金であり、記帳代行の有無、訪問回数、業務の複雑性などにより変動します。詳細はお気軽にお問い合わせください。</small>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 山田太郎税理士事務所. All Rights Reserved.</p>
+            <div class="footer-info">
+                <p class="footer-logo">新星税理士事務所</p>
+                <p>〒100-0001 東京都千代田区千代田1-1 ダミービル5F</p>
+                <p>TEL: 03-1234-5678</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">利用規約</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 新星税理士事務所. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>

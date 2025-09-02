@@ -3,63 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | 山田太郎税理士事務所</title>
+    <title>お問い合わせ | 新星税理士事務所</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+
+    <header class="site-header">
         <div class="container">
-            <h1><a href="index.html">山田太郎税理士事務所</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="about.html">事務所概要</a></li>
-                    <li><a href="services.html">業務内容</a></li>
-                    <li><a href="pricing.html">料金案内</a></li>
-                    <li><a href="faq.html">よくあるご質問</a></li>
-                    <li><a href="contact.html" class="active">お問い合わせ</a></li>
-                    <li><a href="greeting.html">代表挨拶</a></li>
-                </ul>
-            </nav>
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">新星税理士事務所</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="services.html">サービス</a></li>
+                        <li><a href="about.html">事務所紹介</a></li>
+                        <li><a href="greeting.html">代表挨拶</a></li>
+                        <li><a href="pricing.html">料金</a></li>
+                        <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:03-1234-5678" class="phone-number">03-1234-5678</a>
+                    <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="page-header container">
-            <h2>お問い合わせ</h2>
-        </section>
-
-        <section id="contact-content" class="container">
-            <p>税務に関するご相談、業務のご依頼、お見積りなど、お気軽にお問い合わせください。内容を確認後、3営業日以内に担当者よりご連絡いたします。</p>
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">お名前<span>必須</span></label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="company">会社名・屋号</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス<span>必須</span></label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">電話番号</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">お問い合わせ内容<span>必須</span></label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">入力内容を送信</button>
-            </form>
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="text-center">税務に関するご相談、業務のご依頼、お見積りなど、お気軽にお問い合わせください。<br>内容を確認後、3営業日以内に担当者よりご連絡いたします。</p>
+                <form action="#" method="post" class="contact-form-home">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                         <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                     <div class="form-group full-width privacy-policy">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">プライバシーポリシーに同意する</label>
+                    </div>
+                    <div class="full-width text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 山田太郎税理士事務所. All Rights Reserved.</p>
+            <div class="footer-info">
+                <p class="footer-logo">新星税理士事務所</p>
+                <p>〒100-0001 東京都千代田区千代田1-1 ダミービル5F</p>
+                <p>TEL: 03-1234-5678</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">利用規約</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 新星税理士事務所. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
